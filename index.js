@@ -43,9 +43,19 @@
  let  reduceToAllTrue = function(array) {
      for (let i = 0; i < array.length; i++){
          if (!array[i]) {
-             return false
-         }else {
+             return false 
+         }
+            
+         
+     }
+     return true
+ }
+ 
+ let reduceToAnyTrue = function(array) {
+     for (let i = 0; i < array.length; i++){
+         if (array[i]) {
              return true
          }
      }
+     return false
  }
